@@ -51,24 +51,7 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 
-  Row buildForgotPasswordWidget(BuildContext context) {
-    return Row(
-      children: [
-        Spacer(),
-        GestureDetector(
-          onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ForgotPasswordScreen(),
-                ));
-          },
-          child: Text(
-            "Forgot Password",
-            style: TextStyle(
-              decoration: TextDecoration.underline,
-            ),
-          ),
+  
         )
       ],
     );
