@@ -3,9 +3,9 @@ import 'constants.dart';
 
 ThemeData theme() {
   return ThemeData(
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: Colors.limeAccent,
     fontFamily: "Muli",
-    primarySwatch: Colors.deepOrange,
+    primarySwatch: Colors.lightGreen,
     appBarTheme: appBarTheme(),
     textTheme: textTheme(),
     inputDecorationTheme: inputDecorationTheme(),
@@ -52,7 +52,7 @@ TextTheme textTheme() {
 
 AppBarTheme appBarTheme() {
   return AppBarTheme(
-    color: Colors.white,
+    color: Colors.limeAccent,
     elevation: 0,
     brightness: Brightness.light,
     iconTheme: IconThemeData(color: Colors.black),

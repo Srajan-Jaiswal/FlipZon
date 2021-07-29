@@ -16,6 +16,7 @@ class NoAccountText extends StatelessWidget {
         Text(
           "Don't have an account? ",
           style: TextStyle(
+            color: Colors.pinkAccent,
             fontSize: getProportionateScreenWidth(16),
           ),
         ),
@@ -27,8 +28,9 @@ class NoAccountText extends StatelessWidget {
           child: Text(
             "Sign Up",
             style: TextStyle(
+              decoration: TextDecoration.underline,
               fontSize: getProportionateScreenWidth(16),
-              color: kPrimaryColor,
+              color: Colors.pinkAccent,
             ),
           ),
         ),

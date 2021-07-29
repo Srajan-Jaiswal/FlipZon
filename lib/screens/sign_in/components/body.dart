@@ -21,11 +21,12 @@ class Body extends StatelessWidget {
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Text(
-                  "Welcome Back",
+                  "FlipZon",
                   style: headingStyle,
                 ),
                 Text(
-                  "Sign in with your email and password",
+                  "Enter your email and password",
+                   style: TextStyle(color: Colors.pinkAccent),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),

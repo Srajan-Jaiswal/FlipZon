@@ -61,7 +61,9 @@ class _SignUpFormState extends State<SignUpForm> {
       obscureText: true,
       decoration: InputDecoration(
         hintText: "Re-enter your password",
+        hintStyle: TextStyle(color: Colors.pinkAccent),
         labelText: "Confirm Password",
+        labelStyle: TextStyle(color: Colors.black),
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(
           svgIcon: "assets/icons/Lock.svg",
@@ -88,7 +90,9 @@ class _SignUpFormState extends State<SignUpForm> {
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         hintText: "Enter your email",
+        hintStyle: TextStyle(color: Colors.pinkAccent),
         labelText: "Email",
+         labelStyle: TextStyle(color: Colors.black),
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(
           svgIcon: "assets/icons/Mail.svg",
@@ -112,7 +116,9 @@ class _SignUpFormState extends State<SignUpForm> {
       obscureText: true,
       decoration: InputDecoration(
         hintText: "Enter your password",
+       hintStyle: TextStyle(color: Colors.pinkAccent),
         labelText: "Password",
+          labelStyle: TextStyle(color: Colors.black),
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(
           svgIcon: "assets/icons/Lock.svg",

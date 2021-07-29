@@ -20,6 +20,7 @@ class Body extends StatelessWidget {
               ),
               Text(
                 "Complete your details or continue \nwith social media",
+                style: TextStyle(color: Colors.pinkAccent),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: SizeConfig.screenHeight * 0.07),
@@ -27,6 +28,7 @@ class Body extends StatelessWidget {
               SizedBox(height: getProportionateScreenHeight(20)),
               Text(
                 "By continuing your confirm that you agree \nwith our Terms and Conditions",
+                style: TextStyle(color: Colors.pinkAccent),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: getProportionateScreenHeight(20)),

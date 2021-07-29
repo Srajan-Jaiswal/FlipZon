@@ -4,11 +4,9 @@ import 'package:e_commerce_app_flutter/screens/forgot_password/forgot_password_s
 import 'package:e_commerce_app_flutter/services/authentification/authentification_service.dart';
 import 'package:future_progress_dialog/future_progress_dialog.dart';
 import 'package:logger/logger.dart';
-
 import '../../../components/custom_suffix_icon.dart';
 import '../../../components/default_button.dart';
 import 'package:flutter/material.dart';
-
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
@@ -66,6 +64,8 @@ class _SignInFormState extends State<SignInForm> {
           child: Text(
             "Forgot Password",
             style: TextStyle(
+              fontSize: 16,
+              color: Colors.pinkAccent,
               decoration: TextDecoration.underline,
             ),
           ),
@@ -80,7 +80,12 @@ class _SignInFormState extends State<SignInForm> {
       obscureText: true,
       decoration: InputDecoration(
         hintText: "Enter your password",
+         hintStyle: TextStyle(color: Colors.pinkAccent),
         labelText: "Password",
+         labelStyle: TextStyle(
+        color: Colors.black
+      ),
+      
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(
           svgIcon: "assets/icons/Lock.svg",
@@ -97,14 +102,19 @@ class _SignInFormState extends State<SignInForm> {
       autovalidateMode: AutovalidateMode.onUserInteraction,
     );
   }
-
   Widget buildEmailFormField() {
     return TextFormField(
       controller: emailFieldController,
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         hintText: "Enter your email",
+        hintStyle: TextStyle(color: Colors.pinkAccent),
         labelText: "Email",
+  
+         labelStyle: TextStyle(
+        color: Colors.black
+      ),
+
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(
           svgIcon: "assets/icons/Mail.svg",
